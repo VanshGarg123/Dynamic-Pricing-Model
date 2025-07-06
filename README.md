@@ -52,4 +52,7 @@ Final Price is clamped between 0,5x-2x of base_price <br/>
 Where: <br/>
 α, β, γ, δ, ε, λ are user-defined weights <br/>
 base_price = 10.0 <br/>
- 
+
+
+ ## NoteBook Link
+ https://colab.research.google.com/drive/1lruqrcm2DWg8JY8RIORaFn_mJG6EdsYo?usp=sharing
