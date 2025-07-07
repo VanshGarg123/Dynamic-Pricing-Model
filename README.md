@@ -23,7 +23,7 @@ This project builds a real-time, demand-sensitive pricing model for parking spot
 🧮 Daily max aggregation and global normalization <br />
 ✅ Clamped pricing within bounds (0.5x – 2x base) <br />
 
-## Architecture Flow 🏗️ 
+## Architecture Flow with Diagram🏗️ 
 graph TD
     A[CSV Input (parking_stream.csv)] --> B[Pathway Replay CSV] <br />
     B --> C[Time Parsing & Feature Engineering] <br />
@@ -39,6 +39,10 @@ graph TD
     L --> M[Panel Layout Visualization] <br />
     M --> N[Web App Visualization] <br />
     
+<p align="center">
+<img src="https://github.com/user-attachments/assets/705b459e-6d14-4dea-994d-77d41c210c02" width="400" heihgt="300">
+</p>
+
 ## Demand & Pricing Formula 🧮
 $$
 \text{DemandScore} = \alpha \cdot \left(\frac{\text{Occupancy}}{\text{Capacity}}\right) + \beta \cdot \text{QueueLength} - \gamma \cdot \text{TrafficLevel} + \delta \cdot \text{IsSpecialDay} + \varepsilon \cdot \text{MeanVehicleWeight}
